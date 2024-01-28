@@ -26,8 +26,8 @@ function onFormInput() {
   saveToLS(STARAGE_KEY, data);
 }
 function saveToLS(key, value) {
-  const zip = JSON.stringify(value);
-  localStorage.setItem(key, zip);
+  const zip = JSON.stringify(value).trim();
+  localStorage.setItem(key, zipç);
 }
 function loadFromLS(key) {
   const zip = localStorage.getItem(key);
