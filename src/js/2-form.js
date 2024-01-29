@@ -12,6 +12,9 @@ function onFormSubmit(e) {
     email,
     message,
   };
+  if (email === '' && message === '') {
+    return alert('Please fill the form!')
+  } 
   console.log(data);
   localStorage.removeItem(STARAGE_KEY);
   form.reset();
